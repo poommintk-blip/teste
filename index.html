@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปต้นทุนและกำไร VP Autoart (3 เดือน)</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Apply Thai font as primary, with Inter as fallback */
+        body {
+            font-family: 'Noto Sans Thai', 'Inter', sans-serif;
+        }
+
+        /* Custom class for consistent card styling */
+        .report-card {
+            @apply bg-white shadow-lg rounded-xl p-6 transition-all duration-300 hover:shadow-xl;
+        }
+
+        .stat-card {
+            @apply bg-white shadow-lg rounded-xl p-8 text-center;
+        }
+
+        .stat-title {
+            @apply text-lg font-semibold text-slate-600 mb-2;
+        }
+
+        .stat-number {
+            @apply text-4xl font-bold;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-100 p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Header (Overall Performance Summary)           -->
+        <!-- ======================================================= -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-center text-indigo-700">สรุปผลประกอบการ (6 เดือน)</h1>
+            <p class="text-xl text-center text-slate-600">VP Autoart (VPA)</p>
+        </header>
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Key Metrics (The "Big Picture")                -->
+        <!-- ======================================================= -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Total Revenue -->
+            <div class="stat-card border-l-8 border-green-500 pl-4">
+                <h2 class="stat-title">รายรับรวม (3 เดือน)</h2>
+                <p class="stat-number text-green-600">฿30,000.00</p>
+                <p class="text-slate-500 mt-2">(฿10,000 x 3 งวด)</p>
+            </div>
+
+            <!-- Developer Payment -->
+            <div class="stat-card border-l-8 border-purple-500 pl-4">
+                <h2 class="stat-title">เงินจ่าย Developer (3 เดือน)</h2>
+                <p class="stat-number text-purple-700">฿21,000.00</p>
+                <p class="text-slate-500 mt-2">(70% ของรายรับ)</p>
+            </div>
+
+            <!-- Expenses -->
+            <div class="stat-card border-l-8 border-red-500 pl-4">
+                <h2 class="stat-title">ค่าใช้จ่ายบริการ (3 เดือน)</h2>
+                <p class="stat-number text-red-600">฿9,000.00</p>
+                <p class="text-slate-500 mt-2">(30% ของรายรับ - Make.com, RSS.app, Placid ฯลฯ)</p>
+            </div>
+
+            <!-- Net Profit -->
+            <div class="stat-card border-l-8 border-blue-500 pl-4">
+                <h2 class="stat-title">กำไรสุทธิ (3 เดือน)</h2>
+                <p class="stat-number text-blue-700">฿0.00</p>
+                <p class="text-slate-500 mt-2">(รายรับทั้งหมดจัดสรรแล้ว)</p>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Monthly Allocation Breakdown (Detailed)         -->
+        <!-- ======================================================= -->
+        <section class="mt-8">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">รายละเอียดการจัดสรรรายเดือน (3
+                เดือนที่ได้รับเงิน)</h2>
+
+            <!-- Month 1 Allocation -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 1 - การจัดสรร</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    <div class="stat-card border-l-8 border-green-500 pl-4">
+                        <h4 class="stat-title text-sm">รายรับเดือน 1</h4>
+                        <p class="stat-number text-green-600 text-2xl">฿10,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-purple-500 pl-4">
+                        <h4 class="stat-title text-sm">จ่าย Developer (70%)</h4>
+                        <p class="stat-number text-purple-700 text-2xl">฿7,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-red-500 pl-4">
+                        <h4 class="stat-title text-sm">ค่าใช้จ่ายบริการ (30%)</h4>
+                        <p class="stat-number text-red-600 text-2xl">฿3,000.00</p>
+                    </div>
+                </div>
+                <h4 class="text-lg font-semibold text-slate-700 mb-3">ค่าใช้จ่ายจริงเดือน 1:</h4>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong> Make.com Core ฿368.50 + Extra ฿206.99, rss.app ฿346.06, Placid
+                        ฿329.04 = ฿1,250.59</li>
+                    <li><strong>VP Auto Art News:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>VP Korea:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>VP Design:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>รวมค่าใช้จ่ายจริง:</strong> <span class="font-bold text-red-600">฿2,584.87</span></li>
+                </ul>
+                <p class="text-sm text-slate-500 mt-2">หมายเหตุ: ค่าใช้จ่ายจริง ฿2,584.87 < ฿3,000 ที่จัดสรร (เหลือสำรอง
+                        ฿415.13)</p>
+            </div>
+
+            <!-- Month 2 Allocation -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 2 - การจัดสรร</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    <div class="stat-card border-l-8 border-green-500 pl-4">
+                        <h4 class="stat-title text-sm">รายรับเดือน 2</h4>
+                        <p class="stat-number text-green-600 text-2xl">฿10,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-purple-500 pl-4">
+                        <h4 class="stat-title text-sm">จ่าย Developer (70%)</h4>
+                        <p class="stat-number text-purple-700 text-2xl">฿7,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-red-500 pl-4">
+                        <h4 class="stat-title text-sm">ค่าใช้จ่ายบริการ (30%)</h4>
+                        <p class="stat-number text-red-600 text-2xl">฿3,000.00</p>
+                    </div>
+                </div>
+                <h4 class="text-lg font-semibold text-slate-700 mb-3">ค่าใช้จ่ายจริงเดือน 2:</h4>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong> Make.com Core ฿368.50, rss.app ฿346.06, Placid ฿329.04 = ฿1,043.60
+                    </li>
+                    <li><strong>VP Auto Art News:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>VP Korea:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>VP Design:</strong> Placid ฿329.04, RSS ฿115.72 = ฿444.76</li>
+                    <li><strong>รวมค่าใช้จ่ายจริง:</strong> <span class="font-bold text-red-600">฿2,377.88</span></li>
+                </ul>
+                <p class="text-sm text-slate-500 mt-2">หมายเหตุ: ค่าใช้จ่ายจริง ฿2,377.88 < ฿3,000 ที่จัดสรร (เหลือสำรอง
+                        ฿622.12)</p>
+            </div>
+
+            <!-- Month 3 Allocation -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 3 - การจัดสรร</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    <div class="stat-card border-l-8 border-green-500 pl-4">
+                        <h4 class="stat-title text-sm">รายรับเดือน 3</h4>
+                        <p class="stat-number text-green-600 text-2xl">฿10,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-purple-500 pl-4">
+                        <h4 class="stat-title text-sm">จ่าย Developer (70%)</h4>
+                        <p class="stat-number text-purple-700 text-2xl">฿7,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-red-500 pl-4">
+                        <h4 class="stat-title text-sm">ค่าใช้จ่ายบริการ (30%)</h4>
+                        <p class="stat-number text-red-600 text-2xl">฿3,000.00</p>
+                    </div>
+                </div>
+                <h4 class="text-lg font-semibold text-slate-700 mb-3">ค่าใช้จ่ายจริงเดือน 3:</h4>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong> Make.com Core ฿368.50, rss.app ฿346.06, Placid ฿0.00 = ฿714.56</li>
+                    <li><strong>VP Auto Art News:</strong> Placid ฿0.00, RSS ฿115.72 = ฿115.72</li>
+                    <li><strong>VP Korea:</strong> Placid ฿0.00, RSS ฿115.72 = ฿115.72</li>
+                    <li><strong>VP Design:</strong> Placid ฿0.00, RSS ฿115.72 = ฿115.72</li>
+                    <li><strong>รวมค่าใช้จ่ายจริง:</strong> <span class="font-bold text-red-600">฿1,061.72</span></li>
+                </ul>
+                <p class="text-sm text-slate-500 mt-2">หมายเหตุ: ค่าใช้จ่ายจริง ฿1,061.72 < ฿3,000 ที่จัดสรร (เหลือสำรอง
+                        ฿1,938.28)</p>
+            </div>
+
+            <!-- Pending Months Projection -->
+            <div class="bg-yellow-50 border-2 border-yellow-300 shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-yellow-800 mb-4">📅 เดือน 4-6 - คาดการณ์ (ยังไม่ได้รับเงิน)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    <div class="stat-card border-l-8 border-gray-500 pl-4">
+                        <h4 class="stat-title text-sm">รายรับคาดการณ์ (3 เดือน)</h4>
+                        <p class="stat-number text-gray-600 text-2xl">฿30,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-purple-500 pl-4">
+                        <h4 class="stat-title text-sm">จ่าย Developer คาดการณ์ (70%)</h4>
+                        <p class="stat-number text-purple-700 text-2xl">฿21,000.00</p>
+                    </div>
+                    <div class="stat-card border-l-8 border-red-500 pl-4">
+                        <h4 class="stat-title text-sm">ค่าใช้จ่ายบริการ คาดการณ์ (30%)</h4>
+                        <p class="stat-number text-red-600 text-2xl">฿9,000.00</p>
+                    </div>
+                </div>
+                <p class="text-sm text-yellow-800 mt-2">สถานะ: รอรับเงิน 3 งวด (งวดละ ฿10,000) เพื่อจัดสรรตามโครงสร้าง
+                    70/30</p>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Cost Breakdown by Project                      -->
+        <!-- ======================================================= -->
+        <section>
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">รายละเอียดการจัดสรร (70% Developer, 30%
+                ค่าใช้จ่ายบริการ)</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Card: VP Booking -->
+                <div class="report-card">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">🛠️ VP Booking</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <!-- Developer Payment -->
+                        <li class="flex justify-between bg-purple-50 p-2 rounded"><span><strong>เงินจ่าย Developer
+                                    (70%)</strong></span> <span class="font-bold text-purple-700">฿21,000.00</span></li>
+                        <hr class="my-2">
+                        <!-- Actual Expenses -->
+                        <li class="flex justify-between"><span>Make.com (จ่ายแล้ว 5 Core + 2 Extra)</span> <span
+                                class="font-medium">฿2,049.49</span></li>
+                        <li class="flex justify-between"><span>rss.app (จ่ายแล้ว 4 งวด)</span> <span
+                                class="font-medium">฿1,384.24</span></li>
+                        <li class="flex justify-between"><span>Placid (จ่ายแล้ว 2 งวด)</span> <span
+                                class="font-medium">฿1,316.14</span></li>
+                        <li class="flex justify-between"><span>LINE Push (ยังไม่ชำระ - ฿288.90/เดือน)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                        <li class="flex justify-between"><span>Chat Out (ยังไม่ชำระ - ฿347.15/เดือน)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                        <li class="flex justify-between"><span>Chat Input (ยังไม่ชำระ - ฿86.79/เดือน)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                    </ul>
+                    <hr class="my-4 border-slate-200">
+                    <div class="flex justify-between text-xl font-bold">
+                        <span>รวม (Booking) - ค่าใช้จ่ายบริการ</span>
+                        <span class="text-red-600">฿4,749.87</span>
+                    </div>
+                </div>
+
+                <!-- Card: VP Auto Art News -->
+                <div class="report-card">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">📰 VP Auto Art News</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <!-- Developer Payment - Shared -->
+                        <li class="flex justify-between bg-purple-50 p-2 rounded"><span><strong>เงินจ่าย Developer (70%
+                                    - แบ่งตามโปรเจกต์)</strong></span> <span
+                                class="font-bold text-purple-700">฿0.00</span></li>
+                        <hr class="my-2">
+                        <!-- Actual Expenses -->
+                        <li class="flex justify-between"><span>Placid (จ่ายแล้ว 2 งวด - แบ่งจาก ฿1,316.14)</span> <span
+                                class="font-medium">฿658.07</span></li>
+                        <li class="flex justify-between"><span>RSS (จ่ายแล้ว 3 งวด - ฿347.15/งวด)</span> <span
+                                class="font-medium">฿1,041.45</span></li>
+                        <li class="flex justify-between"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                    </ul>
+                    <hr class="my-4 border-slate-200">
+                    <div class="flex justify-between text-xl font-bold">
+                        <span>รวม (Auto Art News) - ค่าใช้จ่ายบริการ</span>
+                        <span class="text-red-600">฿1,699.52</span>
+                    </div>
+                </div>
+
+                <!-- Card: VP Korea -->
+                <div class="report-card">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">🇰🇷 VP Korea</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <!-- Developer Payment - Shared -->
+                        <li class="flex justify-between bg-purple-50 p-2 rounded"><span><strong>เงินจ่าย Developer (70%
+                                    - แบ่งตามโปรเจกต์)</strong></span> <span
+                                class="font-bold text-purple-700">฿0.00</span></li>
+                        <hr class="my-2">
+                        <!-- Actual Expenses -->
+                        <li class="flex justify-between"><span>Placid (จ่ายแล้ว 2 งวด - แบ่งจาก ฿1,316.14)</span> <span
+                                class="font-medium">฿658.07</span></li>
+                        <li class="flex justify-between"><span>RSS (จ่ายแล้ว 3 งวด - ฿347.15/งวด)</span> <span
+                                class="font-medium">฿1,041.45</span></li>
+                        <li class="flex justify-between"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                    </ul>
+                    <hr class="my-4 border-slate-200">
+                    <div class="flex justify-between text-xl font-bold">
+                        <span>รวม (Korea) - ค่าใช้จ่ายบริการ</span>
+                        <span class="text-red-600">฿1,699.52</span>
+                    </div>
+                </div>
+
+                <!-- Card: VP Design -->
+                <div class="report-card">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">🎨 VP Design</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <!-- Developer Payment - Shared -->
+                        <li class="flex justify-between bg-purple-50 p-2 rounded"><span><strong>เงินจ่าย Developer (70%
+                                    - แบ่งตามโปรเจกต์)</strong></span> <span
+                                class="font-bold text-purple-700">฿0.00</span></li>
+                        <hr class="my-2">
+                        <!-- Actual Expenses -->
+                        <li class="flex justify-between"><span>Placid (จ่ายแล้ว 2 งวด - แบ่งจาก ฿1,316.14)</span> <span
+                                class="font-medium">฿658.07</span></li>
+                        <li class="flex justify-between"><span>RSS (จ่ายแล้ว 3 งวด - ฿347.15/งวด)</span> <span
+                                class="font-medium">฿1,041.45</span></li>
+                        <li class="flex justify-between"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                                class="font-medium">฿0.00</span></li>
+                    </ul>
+                    <hr class="my-4 border-slate-200">
+                    <div class="flex justify-between text-xl font-bold">
+                        <span>รวม (Design) - ค่าใช้จ่ายบริการ</span>
+                        <span class="text-red-600">฿1,699.52</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Monthly Cost Breakdown by Project              -->
+        <!-- ======================================================= -->
+        <section class="mt-8">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">ค่าใช้จ่ายรายเดือน (6 เดือน) -
+                ตามการใช้งานจริง</h2>
+
+            <!-- Month 1 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 1</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (Core จ่ายแล้ว)</span> <span
+                            class="font-medium">฿368.50</span></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (Extra Operations จ่ายแล้ว)</span> <span
+                            class="font-medium">฿206.99</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Push (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Notify (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>rss.app (จ่ายแล้ว งวด 1)</span> <span
+                            class="font-medium">฿346.06</span></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 1 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Out (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Input (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Auto Art News:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 1 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 1 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Korea:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 1 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 1 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Design:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 1 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 1 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 1 (จ่ายแล้ว)</span>
+                    <span class="text-red-600">฿2,584.87</span>
+                </div>
+            </div>
+
+            <!-- Month 2 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 2</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (Core จ่ายแล้ว)</span> <span
+                            class="font-medium">฿368.50</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Push (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Notify (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>rss.app (จ่ายแล้ว งวด 2)</span> <span
+                            class="font-medium">฿346.06</span></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 2 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Out (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Input (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Auto Art News:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 2 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 2 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Korea:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 2 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 2 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Design:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (จ่ายแล้ว งวด 2 - แบ่ง 1/4)</span> <span
+                            class="font-medium">฿329.04</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 2 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 2 (จ่ายแล้ว)</span>
+                    <span class="text-red-600">฿2,377.88</span>
+                </div>
+            </div>
+
+            <!-- Month 3 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 3</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (Core จ่ายแล้ว)</span> <span
+                            class="font-medium">฿368.50</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Push (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Notify (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>rss.app (จ่ายแล้ว งวด 3)</span> <span
+                            class="font-medium">฿346.06</span></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Out (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Input (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Auto Art News:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 3 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Korea:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 3 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Design:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ยังไม่ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (จ่ายแล้ว งวด 3 - แบ่ง 1/3)</span> <span
+                            class="font-medium">฿115.72</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ฟรี)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 3 (จ่ายแล้ว)</span>
+                    <span class="text-red-600">฿1,061.72</span>
+                </div>
+            </div>
+
+            <!-- Month 4 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 4</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (จ่ายแล้ว)</span> <span
+                            class="font-medium">฿368.50</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Push (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Notify (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>rss.app (จ่ายแล้ว)</span> <span
+                            class="font-medium">฿347.89</span></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿661.56</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Out (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Input (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Auto Art News:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Korea:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Design:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 4 (ยังไม่ชำระ)</span>
+                    <span class="text-red-600">฿1,704.21</span>
+                </div>
+            </div>
+
+            <!-- Month 5 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 5</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li><strong>VP Booking:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Make.com (จ่ายแล้ว)</span> <span
+                            class="font-medium">฿368.50</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Push (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>LINE Notify (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>rss.app (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿347.89</span></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿661.56</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Out (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li class="flex justify-between ml-4"><span>Chat Input (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Auto Art News:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Korea:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                    <li><strong>VP Design:</strong></li>
+                    <li class="flex justify-between ml-4"><span>Placid (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿231.70</span></li>
+                    <li class="flex justify-between ml-4"><span>RSS (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿115.85</span></li>
+                    <li class="flex justify-between ml-4"><span>Google Sheet, FB, IG (ไม่ได้ชำระ)</span> <span
+                            class="font-medium">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 5 (ยังไม่ชำระ)</span>
+                    <span class="text-red-600">฿2,052.10</span>
+                </div>
+            </div>
+
+            <!-- Month 6 (System Shutdown) -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">🗓️ เดือน 6 (ปิดระบบ)</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li class="flex justify-between"><span>VP Booking</span> <span
+                            class="font-medium text-red-600">฿0.00</span></li>
+                    <li class="flex justify-between"><span>VP Auto Art News</span> <span
+                            class="font-medium text-red-600">฿0.00</span></li>
+                    <li class="flex justify-between"><span>VP Korea</span> <span
+                            class="font-medium text-red-600">฿0.00</span></li>
+                    <li class="flex justify-between"><span>VP Design</span> <span
+                            class="font-medium text-red-600">฿0.00</span></li>
+                </ul>
+                <hr class="my-4 border-slate-200">
+                <div class="flex justify-between text-xl font-bold">
+                    <span>รวมค่าใช้จ่ายเดือน 6</span>
+                    <span class="font-medium text-red-600">฿0.00</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION: Calculation Logic / Assumptions                -->
+        <!-- ======================================================= -->
+        <footer class="mt-8">
+            <div class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-lg">
+                <h4 class="text-2xl font-bold text-slate-800 mb-6 text-center">📋 ข้อมูลอ้างอิงการคำนวณ</h4>
+
+                <!-- Overview Section -->
+                <div class="mb-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                    <h5 class="font-bold text-blue-800 mb-3 text-lg">📊 สรุปโครงการ</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                        <div><strong>ระยะเวลา:</strong> 6 เดือน (สรุป 3 เดือนที่ได้รับเงิน)</div>
+                        <div><strong>รายรับ (3 เดือน):</strong> <span class="text-green-600 font-bold">฿30,000.00</span>
+                        </div>
+                        <div><strong>ชำระแล้ว:</strong> 3 งวด × ฿10,000/งวด</div>
+                        <div><strong>ค้างชำระ:</strong> 3 งวด × ฿10,000/งวด = <span
+                                class="text-orange-600 font-bold">฿30,000.00</span></div>
+                    </div>
+                </div>
+
+                <!-- Allocation Section -->
+                <div class="mb-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                    <h5 class="font-bold text-purple-800 mb-3 text-lg">💰 การจัดสรรงบประมาณ</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-3">
+                        <div class="bg-white p-3 rounded">
+                            <div class="text-purple-700 font-bold mb-1">👨‍💻 จ่าย Developer (70%)</div>
+                            <div class="text-xl font-bold text-purple-700">฿21,000.00</div>
+                            <div class="text-xs text-slate-500 mt-1">฿7,000 × 3 เดือน</div>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <div class="text-red-600 font-bold mb-1">💳 ค่าใช้จ่ายบริการ (30%)</div>
+                            <div class="text-xl font-bold text-red-600">฿9,000.00</div>
+                            <div class="text-xs text-slate-500 mt-1">฿3,000 × 3 เดือน</div>
+                        </div>
+                    </div>
+                    <div class="text-xs text-slate-600 bg-yellow-50 p-2 rounded mt-2">
+                        💡 <strong>หมายเหตุ:</strong> ค่าใช้จ่ายจริง 3 เดือน = ฿6,024.47 | สำรองเหลือ = ฿2,975.53
+                        (สำหรับเดือน 4-6)
+                    </div>
+                </div>
+
+                <!-- Service Costs Section -->
+                <div class="mb-6">
+                    <h5 class="font-bold text-slate-800 mb-4 text-lg">🔧 รายละเอียดค่าใช้จ่ายบริการ</h5>
+
+                    <!-- Paid Services -->
+                    <div class="mb-4">
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-green-50 p-3 rounded border-l-2 border-green-500">
+                                <div class="font-semibold text-slate-700">Make.com</div>
+                                <div class="text-slate-600 ml-2">• Core: 5 งวด × ฿368.50 = ฿1,842.50</div>
+                                <div class="text-slate-600 ml-2">• Extra Operations: ฿82.80 + ฿124.19 = ฿206.99</div>
+                                <div class="text-green-700 font-bold mt-1">รวม: ฿2,049.49</div>
+                            </div>
+
+                            <div class="bg-green-50 p-3 rounded border-l-2 border-green-500">
+                                <div class="font-semibold text-slate-700">rss.app (VP Booking)</div>
+                                <div class="text-slate-600 ml-2">4 งวด × ฿346.06/งวด</div>
+                                <div class="text-green-700 font-bold mt-1">รวม: ฿1,384.24</div>
+                            </div>
+
+                            <div class="bg-green-50 p-3 rounded border-l-2 border-green-500">
+                                <div class="font-semibold text-slate-700">Placid (แบ่ง 4 โปรเจกต์)</div>
+                                <div class="text-slate-600 ml-2">2 งวด × ฿658.07 = ฿1,316.14</div>
+                                <div class="text-slate-600 ml-2">• แบ่ง: Booking/News/Korea/Design = ฿329.04
+                                    ต่อโปรเจกต์/งวด</div>
+                            </div>
+
+                            <div class="bg-green-50 p-3 rounded border-l-2 border-green-500">
+                                <div class="font-semibold text-slate-700">RSS (News/Korea/Design)</div>
+                                <div class="text-slate-600 ml-2">3 งวด × ฿347.15 = ฿1,041.45</div>
+                                <div class="text-slate-600 ml-2">• แบ่ง 3 โปรเจกต์ = ฿347.15 ต่อโปรเจกต์/งวด</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total Summary -->
+                    <div class="p-4 bg-slate-100 rounded-lg text-center">
+                        <div class="text-sm text-slate-600 mb-1">รวมค่าใช้จ่ายบริการทั้งหมด (3 เดือน)</div>
+                        <div class="text-2xl font-bold text-red-600">฿6,024.47</div>
+                        <div class="text-xs text-slate-500 mt-1">จากงบจัดสรร ฿9,000.00 | เหลือสำรอง ฿2,975.53</div>
+                    </div>
+                </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
