@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<style>
+/* Base Reset and Fonts */ 
+body {
+    font-family: 'Kanit', sans-serif; /* ใช้ Kanit เป็นตัวอย่าง Font ไทย */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header {
+    background-color: #b51c38; /* สีแดงเข้มของ Wall's */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+.main-header .logo img {
+    height: 40px; /* ปรับขนาดโลโก้ */
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex; 
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: #b51c38;
+}
+
+.hero-left {
+    background-color: #f7d544; /* สีเหลือง */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%); /* สร้างรูปเฉียงทางขวาเล็กน้อย */
+}
+
+.hero-right {
+    background-color: #e56d6d; /* สีแดงอมส้ม */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    padding: 50px;
+    max-width: 450px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    color: #b51c38; /* สีแดงเข้ม */
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.btn-buy {
+    background-color: #b51c38;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.hero-right img {
+    max-width: 120%; /* ทำให้รูปภาพใหญ่กว่าพื้นที่เล็กน้อย */
+    height: auto;
+    display: block;
+}
+
+.product-grid {
+    display: grid; /* ใช้ Grid แบ่งเป็น 4 คอลัมน์ */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0; /* ไม่มีช่องว่างระหว่าง Grid */
+    margin-top: -50px; /* ดึง Grid ขึ้นไปซ้อนทับ Hero Section เล็กน้อย */
+}
+
+.product-item {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-item img {
+    max-width: 80%;
+    height: auto;
+} </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall's Thailand</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="https://assets.unileversolutions.com/v1/91122370.png?im=AspectCrop=(441,300);Resize=(441,300)">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">แบรนด์ของเรา</a></li>
+                <li><a href="#">ไอศกรีมทั้งหมด</a></li>
+                <li><a href="#">พันธกิจด้านความยั่งยืน</a></li>
+                <li><a href="#">เกี่ยวกับวอลล์</a></li>
+            </ul>
+        </nav>
+        <div class="search-icon">
+            &#128269; </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-left">
+            <div class="hero-content">
+                <h1>สุขให้สุดกับวอลล์</h1>
+                <p>ค้นพบไอศกรีมที่แสนอร่อยได้ที่ด้านล่างนี้เลย!</p>
+                <a href="#" class="btn-buy">ซื้อเลย!</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="https://assets.unileversolutions.com/v1/106488700.jpg?im=AspectCrop=(1440,590);Resize=(1440,590)">
+        </div>
+    </section>
+
+    <section class="product-grid">
+        <div class="product-item" style="background-color: #f74444;">
+            <img src="https://assets.unileversolutions.com/v1/130268973.png?im=AspectCrop=(510,510);Resize=(310,310)">
+        </div>
+        <div class="product-item" style="background-color: #3b2212;">
+            <img src="https://assets.unileversolutions.com/v1/130276383.png?im=AspectCrop=(510,510);Resize=(310,310)">
+        </div>
+        <div class="product-item" style="background-color: #2196f3;">
+            <img src="placeholder_prod3.png" alt="Product 3">
+        </div>
+        <div class="product-item" style="background-color: #8bc34a;">
+            <img src="placeholder_prod4.png" alt="Product 4">
+        </div>
+    </section>
+
+</body>
+</html>
